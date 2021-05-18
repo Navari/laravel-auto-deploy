@@ -1,0 +1,25 @@
+{
+    "name": "navari/laravel-auto-deploy",
+    "description": "Laravel auto deploy module",
+    "authors": [
+        {
+            "name": "Celalettin YILMAZ",
+            "email": "larustr@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/process": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Navari\\LaraDeploy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Navari\\LaraDeploy\\LaraDeployServiceProvider"
+            ]
+        }
+    }
+}
